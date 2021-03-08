@@ -6,7 +6,7 @@ This is AwesomeProject, my very first cross plataform app using React Native tec
 `react-js` `react-native` `props` `state`
 
 <p align="center">
-  <kbd><img src="assets/awesomeProject.gif" width="406"/>
+  <kbd><img src="assets/awesomeProject.gif" width="350"/>
 </p>
 
 ------
