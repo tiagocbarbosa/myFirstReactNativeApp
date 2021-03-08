@@ -1,21 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react'
+import { Button, Text, View } from 'react-native'
 
-export default function App() {
+// I am using React Props and State in this example
+const Cat = (props) => {
+  const [timesPetted, setTimesPetted] = useState(0)
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <Text>
+        Hi, my name is {props.name}. Number of times you fed me: {timesPetted}!
+      </Text>
+      <Button
+        onPress={() => {
+          setTimesPetted(timesPetted + 1)
+        }}
+        title='Feed me!'
+      />
     </View>
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Cafe = () => {
+  return (
+    <View style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'}}>
+        <Cat name='Maru' />
+    </View>
+  )
+}
+
+export default Cafe
