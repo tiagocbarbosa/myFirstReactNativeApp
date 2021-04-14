@@ -5,7 +5,7 @@ This is AwesomeProject, my very first cross plataform app using React Native tec
 ### Info
 Open the 'App.js' file to check the code.
 
-### Tecnologies envolved
+### Technologies involved
 `react-js` `react-native` `props` `state`
 
 <p align="center">
